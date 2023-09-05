@@ -1,0 +1,8 @@
+.about-shape {
+  height: 120px !important;
+}
+
+.contact-me-container {
+  display: flex;
+  justify-content: space-evenly;
+}

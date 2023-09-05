@@ -1,7 +1,25 @@
-.hero-blume {
-  opacity: 0 !important;
+.hero-blume-services {
+  position: absolute;
+  left: auto;
+  top: 242px !important;
+  right: -93px;
+  bottom: auto;
+  z-index: 999;
+}
+
+.homepage-header {
+  padding-top: 25px;
 }
 
 .logo {
   height: 130px !important;
+}
+
+.services-shape {
+  height: 120px !important;
+  top: auto;
+  left: -79px;
+  bottom: 45px;
+  right: auto;
+  position: relative;
 }
