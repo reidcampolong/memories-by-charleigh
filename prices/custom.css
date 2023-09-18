@@ -1,19 +1,14 @@
-.about-shape {
-  height: 120px !important;
-}
-
-.contact-me-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .logo {
   height: 130px !important;
 }
 .w-webflow-badge {
   display: none !important;
+  visibility: hidden !important;
 }
 
+.pricing {
+  padding-top: 50px !important;
+}
 .logo-big {
   height: 200px !important;
 }

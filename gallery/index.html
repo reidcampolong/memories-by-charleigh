@@ -9,22 +9,18 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>Gallery - Blume | Webflow HTML website template</title>
-    <meta
-      content="Gallery - Blume | Webflow HTML website template"
-      property="og:title"
-    />
-    <meta
-      content="Gallery - Blume | Webflow HTML website template"
-      property="twitter:title"
-    />
+    <title>Gallery - Memories By Charleigh</title>
+    <meta content="Gallery - Memories By Charleigh" property="og:title" />
+
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
+
     <link
       href="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/css/blume-template.webflow.3c71af43c.css"
       rel="stylesheet"
       type="text/css"
     />
+    <link href="custom.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9
       ]><script
         src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -41,15 +37,8 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <link
-      href="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/632855f3cc841c2b5e8e1459_favicon.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link
-      href="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/632855f6357ffe8e4ed3ee6c_webclip.png"
-      rel="apple-touch-icon"
-    />
+    <link href="/camera.webp" rel="shortcut icon" type="image/x-icon" />
+    <link href="/camera.webp" rel="apple-touch-icon" />
     <style>
       body {
         -webkit-font-smoothing: antialiased;
@@ -75,73 +64,31 @@
               <div class="nav-menu-flex">
                 <ul role="list" class="nav-menu w-list-unstyled">
                   <li>
-                    <div
-                      data-hover="true"
-                      data-delay="500"
-                      data-w-id="3af8bc8a-5cd4-7ca1-7fbd-f5ab1821d770"
-                      class="dropdown w-dropdown"
-                    >
-                      <div
-                        data-w-id="3af8bc8a-5cd4-7ca1-7fbd-f5ab1821d771"
-                        class="dropdown-item w-dropdown-toggle"
-                      >
-                        <div>Home</div>
-                        <div
-                          class="nav-dropdown-icon w-icon-dropdown-toggle"
-                        ></div>
-                      </div>
-                      <nav class="dropdown-list w-dropdown-list">
-                        <div class="dropdown-triangle">
-                          <img
-                            src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/633ae0f0b7aed31862f4a74f_caret-green.svg"
-                            loading="lazy"
-                            alt=""
-                          />
-                        </div>
-                        <a href="/" class="dropdown-link w-dropdown-link"
-                          >Home Layout I</a
-                        >
-                        <a href="/home-ii" class="dropdown-link w-dropdown-link"
-                          >Home Layout II</a
-                        >
-                        <a
-                          href="/home-iii"
-                          class="dropdown-link w-dropdown-link"
-                          >Home Layout III</a
-                        >
-                      </nav>
-                    </div>
+                    <a href="/" class="nav-link">Home</a>
                   </li>
                   <li>
-                    <a href="/blog" class="nav-link">Blog</a>
-                  </li>
-                  <li>
-                    <a href="/stories" class="nav-link">Stories</a>
+                    <a href="/gallery" class="nav-link">Gallery</a>
                   </li>
                 </ul>
-                <a href="/" class="navbar-brand w-nav-brand">
+                <a
+                  href="/"
+                  aria-current="page"
+                  class="navbar-brand w-nav-brand w--current"
+                >
                   <img
-                    src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/633d8d0041f9348c5b543b2b_logo.svg"
+                    src="https://drive.google.com/uc?id=1VxU8NQLxA2uz8bv1AltZoU7tr8dbcVhS"
                     loading="lazy"
-                    height=""
+                    height="130px"
                     alt=""
                     class="logo"
                   />
                 </a>
                 <ul role="list" class="nav-menu cc-right w-list-unstyled">
                   <li>
-                    <a
-                      href="/gallery"
-                      aria-current="page"
-                      class="nav-link w--current"
-                      >Gallery</a
-                    >
+                    <a href="/prices" class="nav-link">Prices</a>
                   </li>
                   <li>
                     <a href="/about" class="nav-link">About</a>
-                  </li>
-                  <li>
-                    <a href="/contact" class="nav-link">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -162,13 +109,13 @@
       >
         <div class="container">
           <div class="navbar-wrapper-mobile">
-            <a href="#" class="navbar-brand-mobile w-nav-brand">
+            <a href="/" class="navbar-brand-mobile w-nav-brand">
               <img
-                src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/633d8d0041f9348c5b543b2b_logo.svg"
+                src="https://drive.google.com/uc?id=1VxU8NQLxA2uz8bv1AltZoU7tr8dbcVhS"
                 loading="lazy"
                 height="62"
                 alt=""
-                class="logo"
+                class="logo-big"
               />
             </a>
             <div class="menu-button w-nav-button">
@@ -187,57 +134,16 @@
             <div class="nav-menu-flex-mobile">
               <ul role="list" class="nav-menu w-list-unstyled">
                 <li>
-                  <div
-                    data-hover="false"
-                    data-delay="0"
-                    data-w-id="0d17fc25-7387-c84f-6a20-12242f316b08"
-                    class="dropdown-mobile w-dropdown"
-                  >
-                    <div
-                      data-w-id="0d17fc25-7387-c84f-6a20-12242f316b09"
-                      class="dropdown-item-mobile w-dropdown-toggle"
-                    >
-                      <div>Home</div>
-                      <div
-                        class="nav-dropdown-icon w-icon-dropdown-toggle"
-                      ></div>
-                    </div>
-                    <nav class="dropdown-list-mobile w-dropdown-list">
-                      <a href="/" class="dropdown-link-mobile w-dropdown-link"
-                        >Home Layout I</a
-                      >
-                      <a
-                        href="/home-ii"
-                        class="dropdown-link-mobile w-dropdown-link"
-                        >Home Layout II</a
-                      >
-                      <a
-                        href="/home-iii"
-                        class="dropdown-link-mobile w-dropdown-link"
-                        >Home Layout III</a
-                      >
-                    </nav>
-                  </div>
+                  <a href="/" class="nav-link-mobile">Home</a>
                 </li>
                 <li>
-                  <a href="/blog" class="nav-link-mobile">Blog</a>
+                  <a href="/gallery" class="nav-link-mobile">Gallery</a>
                 </li>
                 <li>
-                  <a href="/stories" class="nav-link-mobile">Storıes</a>
-                </li>
-                <li>
-                  <a
-                    href="/gallery"
-                    aria-current="page"
-                    class="nav-link-mobile w--current"
-                    >Gallery</a
-                  >
+                  <a href="/prices" class="nav-link-mobile">Prices</a>
                 </li>
                 <li>
                   <a href="/about" class="nav-link-mobile">About</a>
-                </li>
-                <li>
-                  <a href="/contact" class="nav-link-mobile">Contact</a>
                 </li>
               </ul>
             </div>
@@ -273,8 +179,7 @@
               />
               <h1 class="display-2">Gallery<span></span></h1>
               <p class="paragraph-large">
-                I would like to give you a unique photography experience and
-                capture your special moments for you.
+                Here are some special memories I've captured recently.
               </p>
             </div>
           </div>
@@ -285,32 +190,6 @@
             data-duration-out="100"
             class="gallery-tabs w-tabs"
           >
-            <div class="gallery-tabs-menu w-tab-menu">
-              <a
-                data-w-tab="All"
-                class="gallery-tab-link w-inline-block w-tab-link w--current"
-              >
-                <div>All</div>
-              </a>
-              <a
-                data-w-tab="Wedding"
-                class="gallery-tab-link w-inline-block w-tab-link"
-              >
-                <div>Wedding</div>
-              </a>
-              <a
-                data-w-tab="Couples"
-                class="gallery-tab-link w-inline-block w-tab-link"
-              >
-                <div>Couples</div>
-              </a>
-              <a
-                data-w-tab="Family"
-                class="gallery-tab-link w-inline-block w-tab-link"
-              >
-                <div>Family</div>
-              </a>
-            </div>
             <div class="w-tab-content">
               <div data-w-tab="All" class="w-tab-pane w--tab-active">
                 <div class="gallery-columns">
@@ -321,14 +200,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3.jpg"
+                        src="https://drive.google.com/uc?id=1eWkeUFuPImhRc-b3HP8xFOF4rKjusOJv"
                         loading="lazy"
                         alt="Couple - Blume Photography Webflow Template"
                         class="image-hover"
@@ -343,7 +215,7 @@
                             "fileName": "gc3.jpg",
                             "fileSize": 305115,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3.jpg",
+                            "url": "https://drive.google.com/uc?id=1eWkeUFuPImhRc-b3HP8xFOF4rKjusOJv",
                             "width": 1200,
                             "type": "image"
                           }
@@ -359,13 +231,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5.jpg"
+                        src="https://drive.google.com/uc?id=1CMJn7rr4g6a08482CJoMzwTS9heS3xlU"
                         loading="lazy"
                         alt="Bride and the bridesmaids - Blume Photography Webflow Template"
                         class="image-hover"
@@ -380,7 +246,7 @@
                             "fileName": "gw5.jpg",
                             "fileSize": 298606,
                             "height": 1690,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5.jpg",
+                            "url": "https://drive.google.com/uc?id=1CMJn7rr4g6a08482CJoMzwTS9heS3xlU",
                             "width": 1200,
                             "type": "image"
                           }
@@ -396,14 +262,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3.jpg"
+                        src="https://drive.google.com/uc?id=1BOb3wdSKVyrr5Y4Cy7QIwimfYmzZ77aT"
                         loading="lazy"
                         alt="Bride and groom - Blume Photography Webflow Template"
                         class="image-hover"
@@ -418,7 +277,7 @@
                             "fileName": "gw3.jpg",
                             "fileSize": 339674,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3.jpg",
+                            "url": "https://drive.google.com/uc?id=1BOb3wdSKVyrr5Y4Cy7QIwimfYmzZ77aT",
                             "width": 1200,
                             "type": "image"
                           }
@@ -434,14 +293,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3.jpg"
+                        src="https://drive.google.com/uc?id=1VyjYN1mLMNjoraTnjQ9Es8XNkPD4k5DE"
                         loading="lazy"
                         alt="Kids - Blume Photography Webflow Template"
                         class="image-hover"
@@ -456,7 +308,7 @@
                             "fileName": "gf3.jpg",
                             "fileSize": 109956,
                             "height": 748,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3.jpg",
+                            "url": "https://drive.google.com/uc?id=1VyjYN1mLMNjoraTnjQ9Es8XNkPD4k5DE",
                             "width": 1200,
                             "type": "image"
                           }
@@ -472,14 +324,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4.jpg"
+                        src="https://drive.google.com/uc?id=1_QUKsw9navj1ANIdrRgre3p-8uBEIG19"
                         loading="lazy"
                         alt="Couple pregrant - Blume Photography Webflow Template"
                         class="image-hover"
@@ -494,7 +339,7 @@
                             "fileName": "gf4.jpg",
                             "fileSize": 146752,
                             "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4.jpg",
+                            "url": "https://drive.google.com/uc?id=1_QUKsw9navj1ANIdrRgre3p-8uBEIG19",
                             "width": 1200,
                             "type": "image"
                           }
@@ -510,14 +355,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2.jpg"
+                        src="https://drive.google.com/uc?id=1RHF29hmIdBlCsyG4Bbmtyo6Uq9nLjfZu"
                         loading="lazy"
                         alt="Mother and a baby - Blume Photography Webflow Template"
                         class="image-hover"
@@ -532,7 +370,7 @@
                             "fileName": "gf2.jpg",
                             "fileSize": 221262,
                             "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2.jpg",
+                            "url": "https://drive.google.com/uc?id=1RHF29hmIdBlCsyG4Bbmtyo6Uq9nLjfZu",
                             "width": 1200,
                             "type": "image"
                           }
@@ -549,12 +387,7 @@
                     <div class="image-overflow">
                       <img
                         sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4.jpg"
+                        src="https://drive.google.com/uc?id=1DPiHfboQ3_PG8wSbTIkG3ATmiRTtwbMc"
                         loading="lazy"
                         alt="Wedding - Blume Photography Webflow Template"
                         class="image-hover"
@@ -569,7 +402,7 @@
                             "fileName": "gw4.jpg",
                             "fileSize": 128839,
                             "height": 1200,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4.jpg",
+                            "url": "https://drive.google.com/uc?id=1DPiHfboQ3_PG8wSbTIkG3ATmiRTtwbMc",
                             "width": 1200,
                             "type": "image"
                           }
@@ -586,13 +419,7 @@
                     <div class="image-overflow">
                       <img
                         sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5.jpg"
+                        src="https://drive.google.com/uc?id=1C5sZ2A0IoxYmHchZMs69VbEz09kPy2rE"
                         loading="lazy"
                         alt="Family running on the fields - Blume Photography Webflow Template"
                         class="image-hover"
@@ -607,7 +434,7 @@
                             "fileName": "gf5.jpg",
                             "fileSize": 253146,
                             "height": 1020,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5.jpg",
+                            "url": "https://drive.google.com/uc?id=1C5sZ2A0IoxYmHchZMs69VbEz09kPy2rE",
                             "width": 1200,
                             "type": "image"
                           }
@@ -623,14 +450,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1.jpg"
+                        src="https://drive.google.com/uc?id=1TQahVOD4fK40UqeM1c8GB6GR--541KTO"
                         loading="lazy"
                         alt="Couple - Blume Photography Webflow Template"
                         class="image-hover"
@@ -645,45 +465,7 @@
                             "fileName": "gc1.jpg",
                             "fileSize": 130068,
                             "height": 854,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "All"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="a2a48d1c-67a1-40e8-c206-c30ac39f1a4b"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2.jpg"
-                        loading="lazy"
-                        alt="Couple - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gc2.jpg",
-                            "fileName": "gc2.jpg",
-                            "fileSize": 73605,
-                            "height": 828,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2.jpg",
+                            "url": "https://drive.google.com/uc?id=1TQahVOD4fK40UqeM1c8GB6GR--541KTO",
                             "width": 1200,
                             "type": "image"
                           }
@@ -699,14 +481,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1.jpg"
+                        src="https://drive.google.com/uc?id=1nUMMCJYuzudqd63ZReD8Evl5kzJI37db"
                         loading="lazy"
                         alt="Bride and groom - Blume Photography Webflow Template"
                         class="image-hover"
@@ -721,7 +496,7 @@
                             "fileName": "gw1.jpg",
                             "fileSize": 133467,
                             "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1.jpg",
+                            "url": "https://drive.google.com/uc?id=1nUMMCJYuzudqd63ZReD8Evl5kzJI37db",
                             "width": 1200,
                             "type": "image"
                           }
@@ -738,12 +513,7 @@
                     <div class="image-overflow">
                       <img
                         sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5.jpg"
+                        src="https://drive.google.com/uc?id=18OtgiFLK4Lfi1NBL1bVug2jnPCmyZa1u"
                         loading="lazy"
                         alt="Couple - Blume Photography Webflow Template"
                         class="image-hover"
@@ -758,7 +528,7 @@
                             "fileName": "gc5.jpg",
                             "fileSize": 243738,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5.jpg",
+                            "url": "https://drive.google.com/uc?id=18OtgiFLK4Lfi1NBL1bVug2jnPCmyZa1u",
                             "width": 1200,
                             "type": "image"
                           }
@@ -775,12 +545,7 @@
                     <div class="image-overflow">
                       <img
                         sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2.jpg"
+                        src="https://drive.google.com/uc?id=1C3FUDdTpdU4we08KUVD4j6t0x7SNXh1G"
                         loading="lazy"
                         alt="Bride and groom - Blume Photography Webflow Template"
                         class="image-hover"
@@ -795,7 +560,7 @@
                             "fileName": "gw2.jpg",
                             "fileSize": 187029,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2.jpg",
+                            "url": "https://drive.google.com/uc?id=1C3FUDdTpdU4we08KUVD4j6t0x7SNXh1G",
                             "width": 1200,
                             "type": "image"
                           }
@@ -811,14 +576,7 @@
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4.jpg"
+                        src="https://drive.google.com/uc?id=10de0-xJQ-PBxe1V3JyKUiJxrzl493Gxs"
                         loading="lazy"
                         alt="Couple smiling - Blume Photography Webflow Template"
                         class="image-hover"
@@ -833,7 +591,7 @@
                             "fileName": "gc4.jpg",
                             "fileSize": 259245,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4.jpg",
+                            "url": "https://drive.google.com/uc?id=10de0-xJQ-PBxe1V3JyKUiJxrzl493Gxs",
                             "width": 1200,
                             "type": "image"
                           }
@@ -844,290 +602,12 @@
                   </a>
                   <a
                     href="#"
-                    data-w-id="3aabde17-1125-3fb6-86f2-df76f9525682"
+                    data-w-id="23613425-1550-896c-910a-cb126fa61488"
                     class="gallery-item-lightbox-link w-inline-block w-lightbox"
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1.jpg"
-                        loading="lazy"
-                        alt="Family - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gf1.jpg",
-                            "fileName": "gf1.jpg",
-                            "fileSize": 145139,
-                            "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "All"
-                      }
-                    </script>
-                  </a>
-                </div>
-              </div>
-              <div data-w-tab="Wedding" class="w-tab-pane">
-                <div class="gallery-columns">
-                  <a
-                    href="#"
-                    data-w-id="1ece81a8-cdbd-180d-b3a5-769b8b4e07a3"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3.jpg"
-                        loading="lazy"
-                        alt="Bride and groom - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gw3.jpg",
-                            "fileName": "gw3.jpg",
-                            "fileSize": 339674,
-                            "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18b140d40d4c617e83b8_gw3.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Wedding"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="e1778562-8ab4-abb2-4e36-ddb26785698a"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1.jpg"
-                        loading="lazy"
-                        alt="Bride and groom - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gw1.jpg",
-                            "fileName": "gw1.jpg",
-                            "fileSize": 133467,
-                            "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18977be30f82acff9594_gw1.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Wedding"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="178601af-6e89-5138-867c-19a87e947c4b"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4.jpg"
-                        loading="lazy"
-                        alt="Wedding - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gw4.jpg",
-                            "fileName": "gw4.jpg",
-                            "fileSize": 128839,
-                            "height": 1200,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18bd1c7417bf87723af9_gw4.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Wedding"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="e2a6f530-0990-c6f2-67fe-0a0dad049fb1"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5.jpg"
-                        loading="lazy"
-                        alt="Bride and the bridesmaids - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gw5.jpg",
-                            "fileName": "gw5.jpg",
-                            "fileSize": 298606,
-                            "height": 1690,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a18c2a6980326f2001b51_gw5.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Wedding"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="ac41017a-9c9e-1c47-5bee-464c21a4f5ed"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2.jpg"
-                        loading="lazy"
-                        alt="Bride and groom - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gw2.jpg",
-                            "fileName": "gw2.jpg",
-                            "fileSize": 187029,
-                            "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a189c7c6e9a66608e78d8_gw2.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Wedding"
-                      }
-                    </script>
-                  </a>
-                </div>
-              </div>
-              <div data-w-tab="Couples" class="w-tab-pane">
-                <div class="gallery-columns">
-                  <a
-                    href="#"
-                    data-w-id="a77131a9-cfd3-6c7c-6786-70681e8f98ff"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1.jpg"
-                        loading="lazy"
-                        alt="Couple - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gc1.jpg",
-                            "fileName": "gc1.jpg",
-                            "fileSize": 130068,
-                            "height": 854,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1985534428be00a1c5ab_gc1.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Couples"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="28ef41c1-1578-ed6b-52e5-eef7f71606e5"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4.jpg"
+                        src="https://drive.google.com/uc?id=18di6DzVffgEgswljwkRU4OD07UX3vzqT"
                         loading="lazy"
                         alt="Couple smiling - Blume Photography Webflow Template"
                         class="image-hover"
@@ -1142,32 +622,25 @@
                             "fileName": "gc4.jpg",
                             "fileSize": 259245,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1990535e226b628d75a1_gc4.jpg",
+                            "url": "https://drive.google.com/uc?id=18di6DzVffgEgswljwkRU4OD07UX3vzqT",
                             "width": 1200,
                             "type": "image"
                           }
                         ],
-                        "group": "Couples"
+                        "group": "All"
                       }
                     </script>
                   </a>
                   <a
                     href="#"
-                    data-w-id="56e60926-7576-a07e-6b00-583157e16410"
+                    data-w-id="23613425-1550-896c-910a-cb126fa61488"
                     class="gallery-item-lightbox-link w-inline-block w-lightbox"
                   >
                     <div class="image-overflow">
                       <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3.jpg"
+                        src="https://drive.google.com/uc?id=1ECrnQHDYASTpRcIbkI-l8tLxuAEXwBtJ"
                         loading="lazy"
-                        alt="Couple - Blume Photography Webflow Template"
+                        alt="Couple smiling - Blume Photography Webflow Template"
                         class="image-hover"
                       />
                     </div>
@@ -1176,285 +649,16 @@
                         "items": [
                           {
                             "_id": "example_img",
-                            "origFileName": "gc3.jpg",
-                            "fileName": "gc3.jpg",
-                            "fileSize": 305115,
+                            "origFileName": "gc4.jpg",
+                            "fileName": "gc4.jpg",
+                            "fileSize": 259245,
                             "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a1872e696f0988339fa98_gc3.jpg",
+                            "url": "https://drive.google.com/uc?id=1ECrnQHDYASTpRcIbkI-l8tLxuAEXwBtJ",
                             "width": 1200,
                             "type": "image"
                           }
                         ],
-                        "group": "Couples"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="75825a81-599b-6522-34e1-a7bb532bf712"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2.jpg"
-                        loading="lazy"
-                        alt="Couple - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gc2.jpg",
-                            "fileName": "gc2.jpg",
-                            "fileSize": 73605,
-                            "height": 828,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19870b47655d7e054c40_gc2.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Couples"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="fb29ba88-c3bb-88d3-d1ad-0acd3f88dc86"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5-p-500.jpg  500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5-p-800.jpg  800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5.jpg       1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5.jpg"
-                        loading="lazy"
-                        alt="Couple - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gc5.jpg",
-                            "fileName": "gc5.jpg",
-                            "fileSize": 243738,
-                            "height": 1800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a199426aa84b3d7b00f6f_gc5.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Couples"
-                      }
-                    </script>
-                  </a>
-                </div>
-              </div>
-              <div data-w-tab="Family" class="w-tab-pane">
-                <div class="gallery-columns">
-                  <a
-                    href="#"
-                    data-w-id="814e772f-8119-4016-c4d7-254943fafba3"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1.jpg"
-                        loading="lazy"
-                        alt="Family - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gf1.jpg",
-                            "fileName": "gf1.jpg",
-                            "fileSize": 145139,
-                            "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19322304e10a79974738_gf1.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Family"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="c901d6e0-1c8a-131b-2a75-1884ea3048f8"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3.jpg"
-                        loading="lazy"
-                        alt="Kids - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gf3.jpg",
-                            "fileName": "gf3.jpg",
-                            "fileSize": 109956,
-                            "height": 748,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a194526aa84a82bb00768_gf3.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Family"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="b75c7210-d53a-dadc-b3d9-ca62e8d37600"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4.jpg"
-                        loading="lazy"
-                        alt="Couple pregrant - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gf4.jpg",
-                            "fileName": "gf4.jpg",
-                            "fileSize": 146752,
-                            "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2232535e22dcaa901b0d_gf4.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Family"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="ae2acdda-39e6-27b8-4b69-cf54d9fe3fa5"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5.jpg"
-                        loading="lazy"
-                        alt="Family running on the fields - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gf5.jpg",
-                            "fileName": "gf5.jpg",
-                            "fileSize": 253146,
-                            "height": 1020,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a2420159d7217739c1fd3_gf5.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Family"
-                      }
-                    </script>
-                  </a>
-                  <a
-                    href="#"
-                    data-w-id="8772f277-a85a-a800-522b-6e07f8ab91e4"
-                    class="gallery-item-lightbox-link w-inline-block w-lightbox"
-                  >
-                    <div class="image-overflow">
-                      <img
-                        sizes="100vw"
-                        srcset="
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2-p-500.jpg   500w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2-p-800.jpg   800w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2-p-1080.jpg 1080w,
-                          https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2.jpg        1200w
-                        "
-                        src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2.jpg"
-                        loading="lazy"
-                        alt="Mother and a baby - Blume Photography Webflow Template"
-                        class="image-hover"
-                      />
-                    </div>
-                    <script type="application/json" class="w-json">
-                      {
-                        "items": [
-                          {
-                            "_id": "example_img",
-                            "origFileName": "gf2.jpg",
-                            "fileName": "gf2.jpg",
-                            "fileSize": 221262,
-                            "height": 800,
-                            "url": "https://uploads-ssl.webflow.com/6320506a005493560e53f06d/636a19402304e1d7c79747a9_gf2.jpg",
-                            "width": 1200,
-                            "type": "image"
-                          }
-                        ],
-                        "group": "Family"
+                        "group": "All"
                       }
                     </script>
                   </a>
@@ -1463,85 +667,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="footer background-primary-100 wf-section">
-      <div class="container">
-        <div class="footer-grid">
-          <div
-            id="w-node-e1410c2d-2453-87da-9239-30be398afc0d-398afc0a"
-            class="footer-left-column"
-          >
-            <div class="icon-title">
-              <img
-                src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/634964a3c19d649d290b2d16_instagram2.svg"
-                loading="lazy"
-                alt="Instagram - Blume Photography Webflow Template"
-                class="social-icon"
-              />
-              <h4 class="h4-uppercase margin-bottom-none">Instagram</h4>
-            </div>
-            <a href="#" class="link-body">juliablumephotography</a>
-            <div class="spacer-35"></div>
-            <div class="icon-title">
-              <img
-                src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/634964a38f90054aea9b23ac_facebook2.svg"
-                loading="lazy"
-                alt="Facebook - Blume Photography Webflow Template"
-                class="social-icon"
-              />
-              <h4 class="h4-uppercase margin-bottom-none">Facebook</h4>
-            </div>
-            <a href="#" class="link-body">juliablumephotography</a>
-          </div>
-          <div
-            id="w-node-e1410c2d-2453-87da-9239-30be398afc1b-398afc0a"
-            class="footer-center-column"
-          >
-            <img
-              src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/633d8d0041f9348c5b543b2b_logo.svg"
-              loading="lazy"
-              alt=""
-              class="footer-logo"
-            />
-            <p class="margin-bottom-none">
-              I would like to give you a unique photography experience and
-              capture your special moments.
-            </p>
-          </div>
-          <div
-            id="w-node-e1410c2d-2453-87da-9239-30be398afc1f-398afc0a"
-            class="footer-right-column"
-          >
-            <div class="icon-title">
-              <img
-                src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/634964a3c19d64706c0b2d1b_phone2.svg"
-                loading="lazy"
-                alt="Phone - Blume Photography Webflow Template"
-                class="social-icon"
-              />
-              <h4 class="h4-uppercase margin-bottom-none">Telephone</h4>
-            </div>
-            <a href="#" class="link-body">+88 218 574 65 74</a>
-            <div class="spacer-35"></div>
-            <div class="icon-title">
-              <img
-                src="https://uploads-ssl.webflow.com/6320506a005493560e53f06d/634964a29b5933692c62eed1_mail2.svg"
-                loading="lazy"
-                alt="Mail - Blume Photography Webflow Template"
-                class="social-icon"
-              />
-              <h4 class="h4-uppercase margin-bottom-none">E-Mail</h4>
-            </div>
-            <a href="#" class="link-body">info@juliablume.com</a>
-          </div>
-        </div>
-        <p class="copyright">
-          © Blume by elemis.
-          <a href="/template/license" class="link-body">Licensing</a> . Powered
-          by <a href="https://webflow.com" class="link-body">Webflow</a>
-          .
-        </p>
       </div>
     </div>
     <script

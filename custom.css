@@ -15,6 +15,9 @@
   height: 130px !important;
 }
 
+.logo-big {
+  height: 200px !important;
+}
 .services-shape {
   height: 120px !important;
   top: auto;
@@ -22,4 +25,12 @@
   bottom: 45px;
   right: auto;
   position: relative;
+}
+
+.w-webflow-badge {
+  display: none !important;
+}
+
+.testimonial-frame {
+  margin-top: 30px;
 }
